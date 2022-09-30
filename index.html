@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: { 
+            screens: {
+        'mobile': '320px',
+        'sm': '640px',
+      // => @media (min-width: 640px) { ... }
+
+      'md': '768px',
+      // => @media (min-width: 768px) { ... }
+
+      'lg': '1024px',
+      // => @media (min-width: 1024px) { ... }
+      'laptop': '1080px',
+      'xl': '1280px',
+      // => @media (min-width: 1280px) { ... }
+
+      '2xl': '1536px',
+      // => @media (min-width: 1536px) { ... }
+    },
+            extend: {
+              colors: {
+                clifford: '#da373d',
+              }
+            }
+          }
+        }
+      </script>
+    <title>CV Dina</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <nav class="bg-[#C25B56] py-2 flex justify-center gap-8 text-white">
+        <a href="#" class="hover:bg-white hover:text-black rounded-md">Home</a> <a href="#"  class="hover:bg-white hover:text-black rounded-md">About</a> <a href="#"  class="hover:bg-white hover:text-black rounded-md">Skills</a> <a href="#"  class="hover:bg-white hover:text-black rounded-md">Contact</a>
+    </nav>
+    <main>
+        <section class="biodata bg-[#C25B56] pt-6 laptop:flex laptop:justify-center laptop:gap-4 laptop:pb-6">
+            <figure class="h-60 w-60 mx-auto bg-cover rounded-full laptop:mx-0" style="background-image: url(src/profil.png) ;"></figure>
+            <figcaption class="text-center py-3 text-white laptop:my-auto">
+                <h1 class="font-semibold text-xl tracking-widest"> Dina Alvionita</h1>
+                <P>"Mahasiswi Akuntansi"</P>
+            </figcaption>
+        </section>
+        <section> 
+            <h2 class="bg-[#94a3b8] text-center font-semibold text-white text-xl">About Me</h2>
+            <p class="bg-white text-black text-justify py-5 px-10">Saya adalah Mahasiswi Sekolah Tinggi Ilmu Ekonomi Mahardhika Jurusan Akuntansi yang mengikuti Program Studi Independent Kampus Merdeka di Ruang Guru Career Acceleration Bootcamp Batch 3 untuk Jurusan Front End Engineering.
+                Walaupun berasal dari jurusan yang tidak relevan dengan dunia Front End Engineering, tidak membuat semangat saya pudar untuk mempersiapkan karir dan belajar di Ruang guru.
+            </p>
+        </section>
+        <section id="skills">
+            <h2 class="bg-[#94a3b8] text-center font-semibold text-white text-xl">Skills</h2>
+            <ul class="bg-[#C25B56] py-5 px-10 text-white">
+                <li class="flex gap-1 py-1">
+                    <p>Komunikasi</p><img src="src/star.png" width="20" height="20" alt="star"><img src="src/star.png" width="20" height="20" alt="star"><img src="src/star.png" width="20" height="20" alt="star"><img src="src/star.png" width="20" height="20" alt="star"><img src="src/star.png" width="20" height="20" alt="star">
+                </li>
+                <li class="flex gap-1 py-1">
+                    <p>Kepemimpinan</p><img src="src/star.png" width="20" height="20" alt="star"><img src="src/star.png" width="20" height="20" alt="star"><img src="src/star.png" width="20" height="20" alt="star"><img src="src/star.png" width="20" height="20" alt="star"><img src="src/star.png" width="20" height="20" alt="star">
+                </li>
+                <li class="flex gap-1 py-1">
+                    <p>Kerjasama</p><img src="src/star.png" width="20" height="20" alt="star"><img src="src/star.png" width="20" height="20" alt="star"><img src="src/star.png" width="20" height="20" alt="star"><img src="src/star.png" width="20" height="20" alt="star">
+                </li>
+                <li class="flex gap-1 py-1">
+                    <p>Kreatif</p><img src="src/star.png" width="20" height="20" alt="star"><img src="src/star.png" width="20" height="20" alt="star"><img src="src/star.png" width="20" height="20" alt="star"><img src="src/star.png" width="20" height="20" alt="star">
+                </li>
+            </ul>
+            
+        </section>
+        <section id="contactme" class="mx-auto mb-10">
+            <h2 class="bg-[#94a3b8] text-center font-semibold text-white text-xl">Contact Me!</h2>
+            <form action="#" class="w-72 flex flex-col mx-auto text-center gap-2">
+                <label for="name" class="mt-4">Nama</label>
+                <input type="text" id="Nama" name="name" placeholder="Input your name" class="rounded-lg border-2 py-2 px-3">
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" placeholder="Input your email" class="rounded-lg border-2 py-2 px-3">
+                <label for="message">Pesan:</label>
+                <textarea id="message" rows="4" cols="50" class="rounded-lg border-2 py-2 px-3 text-slate-500">
+Tulis pesanmu dengan lengkap di sini.
+        </textarea>
+                <input type="submit" class="w-24 mx-auto py-1.5 text-white bg-[#C25B56] rounded-lg hover:bg-[#C25B56] hover:cursor-pointer" value="Submit" />
+              </form>
+        </section>
+    </main>
+    <footer class="bg-[#94a3b8] py-2 text-center md:text-center lg:text-center">
+        <p class="text-white font-semibold">Created by <a href="https://instagram.com/al.vionitaa">Dina Alvionita</a>
+        </p>
+    </footer>
+</body>
+</html>
